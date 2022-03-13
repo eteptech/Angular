@@ -6,12 +6,6 @@
     background-position: top  ;
     background-repeat: no-repeat;
 }
-
-a{
-    color: #000;
-    font-weight: 900;
-}
-
 .p-rgt-sec{
     display: flex;
     flex-direction: column;
