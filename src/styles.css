@@ -14,6 +14,7 @@ body {
 a, a:hover {
   text-decoration: none;
   color: #f9b205;
+  cursor: pointer;
 }
 
 ul{
