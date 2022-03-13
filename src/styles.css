@@ -1,10 +1,69 @@
 /* You can add global styles to this file, and also import other style files */
 @import "~bootstrap/dist/css/bootstrap.css";
 @import "~font-awesome/css/font-awesome.css";
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+@import "~font-awesome/css/font-awesome.min.css";
+@import "~bootstrap-icons/font/bootstrap-icons.css";
 
-.container{
-  margin-top:5%;
+
+
+body {
+  margin: 0; 
+  padding: 0;
+  font-size: 18px;
+ }
+a, a:hover {
+  text-decoration: none;
+  color: #f9b205;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+h1,h2, h3,h4,h5,h6{
+  font-weight: 700;
+}
+
+.p-readmore{
+  color: #000;
+  font-size: 20px;
+  font-weight:600  ;
+}
+
+.p-readmore i{
+  transition: all .5s;
+  transform: translateX(0)!important;
+}
+.p-readmore:hover i{
+  transform: translateX(5px)!important;
+}
+/*Commons*/
+
+.p-flex{
+  display: flex;
+}
+
+.p-flex-align-center{
+  align-items: center!important;
+}
+.p-flex-justify-sb{
+  justify-content: space-between!important;
+}
+p{
+  margin: 0;
+}
+.p-wrapper{
+  position: relative;
+}
+.p-wrapper::before{
+  content:'' ;
+  background: #f9b205;
+  height: 100vh;
+  width: 20vw;
+  position: absolute;
+  z-index: -1;
 }
 
