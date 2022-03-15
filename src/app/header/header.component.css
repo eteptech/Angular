@@ -1,26 +1,45 @@
 
 header{
-    padding: 30px 0;
-   
+    display: flex;
+    padding:5rempx 0;
+    box-shadow: 0px 2px 0px rgb(231, 203, 203);
+    margin-bottom: .5rem;
+    height: 10vh;
+    align-items: center;
+}
+.app-logo{
+    max-width: 50px;
 }
 
+.app-logo img{
+    width: 100%;
+    height: auto;
+}
 .p-hamburger{
+    width:40px;
     cursor: pointer;
+    visibility: hidden;
 }
 .p-hamburger span{
-    width: 20px;
+    width:100%;
     height: 3px;
     background: #000;
     display: block;
     margin-bottom: 4px;
 }
 
+.p-hamburger:hover > span:nth-child(3), .p-hamburger:hover> span:nth-child(2) {
+    width:100%;
+   
+}
+
 .p-hamburger span:last-child{
     margin-bottom: 0;
+    width:40%;
 }
 
 .p-hamburger span:nth-child(2){
-    width: 10px;
+    width:75%;
 }
 
 header ul{
@@ -28,13 +47,18 @@ header ul{
     align-items: center;
 }
 header ul li{
-    padding: 0 20px;
+    padding: 0 .5rem;
 }
 
 header ul li:first-child{
     padding-left: 0px;
    
 }
+.searchNav{
+    display: flex;
+   
+}
+
 
 header ul li:last-child{
     padding-right: 0;
@@ -46,11 +70,43 @@ header ul li a{
 }
 header ul li a:hover::after ,header ul li a.is-active::after{
     content: '';
-    background: #f9b205;
-    height: 5px;
+    background: #ccc;
+    width: 80%;
+    height:.1rem;
     position: absolute;
     left: 1px;
     z-index: -1;
     bottom: 0;
     right: -3px;
 }
+
+.navLink{
+    background: #fff;
+    opacity: .5;
+    padding: 1rem;
+    box-shadow: 1px 2.5px 0px 1px #ccc
+}
+.navBar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar span{
+    padding-right: 1.5rem;
+}
+@media screen and (max-width:500px){
+    .p-hamburger{
+        visibility: visible;
+    }
+    .navLink{
+        display:none;
+        flex-direction: column;
+        position: absolute;
+        left: 3%;
+        top: 5%;
+    }
+    .navLink a{
+        color: #fff;
+    }
+}
+    

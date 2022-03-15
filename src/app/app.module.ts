@@ -11,6 +11,21 @@ import { AboutComponent } from './about/about.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AsideComponent } from './aside/aside.component';
+import {MatMenuModule} from '@angular/material/menu';
+import {MatButtonModule} from '@angular/material/button';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import {MatCardModule} from '@angular/material/card';
+import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import {MatBadgeModule} from '@angular/material/badge';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { LoginComponent } from './login/login.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { TermsConditionComponent } from './terms-condition/terms-condition.component';
+
 
 @NgModule({
   declarations: [
@@ -20,12 +35,27 @@ import { AsideComponent } from './aside/aside.component';
     AboutComponent,
     HeaderComponent,
     FooterComponent,
-    AsideComponent
+    AsideComponent,
+    LoginComponent,
+    SignUpComponent,
+    PrivacyPolicyComponent,
+    TermsConditionComponent,
+
   ],
   imports: [
+    MatSidenavModule,
+    MatButtonToggleModule,
+    MatBadgeModule,
+    MatProgressSpinnerModule,
+    MatToolbarModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatMenuModule,
+    MatButtonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatCardModule,
     NgbModule
   ],
   providers: [],

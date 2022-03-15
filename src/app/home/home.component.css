@@ -1,12 +1,21 @@
+
 .p-profile{
     background:url(/assets/img/profile.jpg);
+    background-color: #acacac;
     width: 100%;
     height: 450px;
     background-size: cover;
     background-position: top  ;
     background-repeat: no-repeat;
 }
+
+a{
+    color: #000;
+    font-weight: 900;
+}
+
 .p-rgt-sec{
+    padding: .7rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -34,4 +43,9 @@ h5{
     box-sizing: border-box;
     margin: 0px 5px 0px 0px;
     box-shadow: 2px 2px 3px #000;
+}
+@media  screen and (max-width:576px) {
+    .p-rgt-sec{
+        padding-top:1.5rem ;
+    }
 }
