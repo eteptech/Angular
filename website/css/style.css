@@ -1,0 +1,70 @@
+/*######### Importing Fonts ###########*/
+@import url('fonts.css');
+
+/*######## Importing css variables####*/
+@import url(patials/_variables.css);
+
+/*########global styling##############*/
+@import url('patials/_global.css');
+
+/*#########Styling navigation bar######*/
+.header_area .main-menu .navbar .navbar-brand{
+    padding: 0rem 2rem 0rem 5rem;
+}
+
+.header_area .main-menu .navbar{
+    padding: 1rem 20rem 1rem 15rem;
+}
+.header_area .main-menu .navbar .navbar-nav .nav-item .nav-link{
+    font:normal 500 15px/2px var(--roboto);
+    text-transform: uppercase;
+    padding: 1.7rem;
+    color:var(--title-color);
+}
+.header_area .main-menu .navbar .navbar-nav .active a{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+.header_area .main-menu .navbar .navbar-nav  a:hover{
+    background: var(--gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+/*#############End Navigation############*/
+
+/*##############Start Banner Area########*/
+.site-main .site-banner{
+
+    background: url('../img/engineer\ bg.jpg') no-repeat 0% 50%;
+}
+.site-main .site-banner .site-title h3{
+    
+    padding-top: 35%;
+    font-weight: 500;
+
+}
+.site-main .site-banner .site-title h3::after{
+    content:'';
+    height: 2px;
+    width: 18vw;
+    background-color: black;
+    display: inline-block;
+    margin-left: 5%;
+    transform: translateY(-10px);
+
+}
+.site-main .site-banner .site-title h1{
+    font-size:3rem;
+}
+.site-main .site-banner .site-title h4{
+    font-size:1rem;
+}
+.site-main .site-banner .banner-img{
+    padding: 7rem 0;
+}
+.site-main .site-banner .banner-img img{
+    width: 100%;
+}
